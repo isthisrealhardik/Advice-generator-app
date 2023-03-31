@@ -27,9 +27,9 @@ function App() {
 
   return (
     <div className=" w-screen h-screen bg-dark-blue flex justify-center items-center font-Manrope">
-      <div className=" bg-dark-grayish-blue w-[90%] h-[50%] rounded-lg drop-shadow-2xl flex flex-col justify-center items-center text-center">
-        <p id="id" className=" text-neon-green tracking-[0.3rem] text-sm uppercase py-2">Advice {quote.id}</p>
-        <h1 id="advice" className=" text-light-cyan text-2xl my-4 px-2">"{quote.advice}"</h1>
+      <div className=" bg-dark-grayish-blue w-[90%] h-[50%] md:w-[30%] rounded-lg drop-shadow-2xl flex flex-col justify-center items-center text-center">
+        <p id="id" className=" text-neon-green tracking-[0.3rem] text-sm md:text-base uppercase py-2">Advice {quote.id}</p>
+        <h1 id="advice" className=" text-light-cyan text-2xl my-4 px-2 md:text-3xl md:my-6 md:px-6">"{quote.advice}"</h1>
         <button onClick={getAdvice} className="bg-neon-green my-2 rounded-full p-4 hover:bg-light-cyan transition transform hover:scale-105">
           <img src="/images/icon-dice.svg" alt="Icon Dice" />
         </button>
